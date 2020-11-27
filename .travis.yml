@@ -1,5 +1,3 @@
-services:
-  - docker
 language: java
 jdk:
   - oraclejdk8
@@ -10,43 +8,99 @@ script:
 jobs:
   include:
   - stage: Checks
-    name: UI check
+    jdk: oraclejdk8
+    name: UI check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.5
     - TEST_PATH=/ui
   - stage: Checks
-    name: service cart check
+    jdk: oraclejdk9
+    name: UI check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.5
+    - TEST_PATH=/ui
+  - stage: Checks
+    jdk: oraclejdk8
+    name: service cart check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.5
     - TEST_PATH=/service/cart
   - stage: Checks
-    name: service user check
+    jdk: oraclejdk9
+    name: service cart check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.5
+    - TEST_PATH=/service/cart
+  - stage: Checks
+    jdk: oraclejdk8
+    name: service user check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.5
     - TEST_PATH=/service/user
   - stage: Checks
-    name: repository order check
+    jdk: oraclejdk9
+    name: service user check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.5
+    - TEST_PATH=/service/user
+  - stage: Checks
+    jdk: oraclejdk8
+    name: repository order check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.24
     - TEST_PATH=/repository/order
   - stage: Checks
-    name: repository cart check
+    jdk: oraclejdk9
+    name: repository order check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.24
+    - TEST_PATH=/repository/order
+  - stage: Checks
+    jdk: oraclejdk8
+    name: repository cart check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.5
     - TEST_PATH=/repository/cart
   - stage: Checks
-    name: repository product check
+    jdk: oraclejdk9
+    name: repository cart check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.5
+    - TEST_PATH=/repository/cart
+  - stage: Checks
+    jdk: oraclejdk8
+    name: repository product check jdk8
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.5
     - TEST_PATH=/repository/product
   - stage: Checks
-    name: repository user check
+    jdk: oraclejdk9
+    name: repository product check jdk9
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.5
+    - TEST_PATH=/repository/product
+  - stage: Checks
+    jdk: oraclejdk8
+    name: repository user check jdk8
+    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+    env:
+    - COVERAGE=0.24
+    - TEST_PATH=/repository/user
+  - stage: Checks
+    jdk: oraclejdk9
+    name: repository user check jdk9
     script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
     env:
     - COVERAGE=0.24
