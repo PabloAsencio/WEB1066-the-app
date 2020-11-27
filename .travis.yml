@@ -11,19 +11,19 @@ jobs:
       name: "UI check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.6
+        - COVERAGE=0.5
         - TEST_PATH=/ui
     - stage: "Checks"
       name: "service cart check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.6
+        - COVERAGE=0.5
         - TEST_PATH=/service/cart
     - stage: "Checks"
       name: "service user check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.6
+        - COVERAGE=0.5
         - TEST_PATH=/service/user
     - stage: "Checks"
       name: "repository order check"
@@ -35,13 +35,13 @@ jobs:
       name: "repository cart check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.6
+        - COVERAGE=0.5
         - TEST_PATH=/repository/cart
     - stage: "Checks"
       name: "repository product check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.6
+        - COVERAGE=0.5
         - TEST_PATH=/repository/product
     - stage: "Checks"
       name: "repository user check"
