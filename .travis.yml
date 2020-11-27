@@ -29,7 +29,7 @@ jobs:
       name: "repository order check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.3
+        - COVERAGE=0.24
         - TEST_PATH=/repository/order
     - stage: "Checks"
       name: "repository cart check"
@@ -47,7 +47,7 @@ jobs:
       name: "repository user check"
       script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
       env:
-        - COVERAGE=0.3
+        - COVERAGE=0.24
         - TEST_PATH=/repository/user
 
 after_success:
