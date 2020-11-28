@@ -122,5 +122,5 @@ deploy:
     provider: script
     script: chmod +x ./script/deploy.sh && ./script/deploy.sh
     on:
-        all_branches: true
+        branch: master
         condition: $UI_BUILD = true
