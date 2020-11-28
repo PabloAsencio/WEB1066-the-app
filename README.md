@@ -2,7 +2,7 @@
 
 ## Introduction
 This application and its continuous delivery pipeline is used as training
-material during the DevOps Dojo green belt training.
+material during the DevOps Dojo green belt training
 
 ## Overview
 This application gives software architects and developers an example how a
