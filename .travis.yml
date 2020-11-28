@@ -1,126 +1,127 @@
 services:
-  - docker
+    - docker
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk9
+    - oraclejdk8
+    - oraclejdk9
 dist: trusty
 env:
-  global:
-  - UI_BUILD=false
-  - secure: qUu4ulnuWQh1HSIwRL+831/tGVCfSfUjf4ZaTXnYYofMFR47cCxGQNvkBbUF/+alKXqLnFu/86dkL0qKTUe2OW3wq8N+egX2srOcZa0JgpMX0fcHYLYeW9q6oerRhOYejb2kIFMQn9SDKSZKmQGiyI3WOZa4188+pNGOgC/Yy0PjclZ8ldTfKxRA/KOgbOKVFp63dY78S9k9aNs+/gxsQuGhxlUZ3vNoUvXIyMwquIn5bO22Bc5tO+Fp8CGBwzdIyAWZsi2+0I9K482SlQIV9TGCVsapMR+wLUA/PySHb/yHk7MU1qiG/CKXnfWbpEtZzvXxs8aQ8/G4kKvHVsV10Tg7DGRrCyCnHir8UioQjh6gq9F2uvLId/sj+zL1BNQFUKhSmXHEl1d8cnSfywhIurQBxSWANTOa0A1DMYlbn4zi7PWxHF2fAYlFr+LKMSQLFwPXwapqUNxbMHeiMSlsPHXKqP9CoqUPGuhOHeG+5GHzM+lpj+ii5gkpK4n5qsWOtWrG+aXSG806g6Yg/f0lP9M8RoPYCD3MrCOYbEWFv6L2sC/SGt0q4Kv5gkPrwLrmtKgebvFM5LplHcbFeLsmBCHn2ZjMy7LD/uqw7J5SuHD/CvepIz79r9tlhq6AAVoG1IcgwVCxDrhdBRh4wBWKESEMbIc37mxitlxW8gV7ITw=
-  - secure: FHKKhT52gTNjVF6xR6yl11aswprsJ0KQJ2Pxl2visVo379KX1Vrhoogkl/PgJPV/SqQF7EsXNc4G560N53pUkEYSMXsAQ1gGDLXnwq5HWrOorzVqryjhO2uyLg+5BiE2Y149wFeiV6BTx4zUpwEeXzcSwMXMGg8HRIR+ZbDReBn0oBwv3vomtwxf4F9/O0rhDp8Vh65GUhl89DzpL6ZOKBwo2dQC55195B9f+CaKjhPETx40A1GMW62cKhWgqA3ck+2ctgORt9oMxZ8I5RGX941QS+wq6XzYozWTW5Iv0rwE8E4lpvatUQCcpgCZ3f97JZZphJ/XJF8Bi0uqvtQ3pr3AY2ihMzv0Oo3iIKWB5+PadEvmVFtnOOdodSlZNLmJY0lS1g5ObmxKRX3r9uJAVMGvNIc4DbW4WsSRvgaS/gCsLZlVDgrJuNdjUo9q6c1NyDIaf0PMcDQ842lQVBV7Xjww33UgrUNVa4WWm2kLHW1+xuCYZZnlN02Usfmz9W8yULN7baqFw6SOIaLLq2CjJzf6nC8Y7TPVY2hImmQU9+6RFBVdi/9WXyNSnF5fxdzytlepZ80xtNp4e7NJxGNocgLjoS4+88j9CdUqGKsmBXIqm64n5CXbGWIFRxb7XwDAkVNKaXieT5V7wT7lmBEtzVlrGeGsyWW9ytih+/GEvls=
+    global:
+        - UI_BUILD=false
+        - secure: qUu4ulnuWQh1HSIwRL+831/tGVCfSfUjf4ZaTXnYYofMFR47cCxGQNvkBbUF/+alKXqLnFu/86dkL0qKTUe2OW3wq8N+egX2srOcZa0JgpMX0fcHYLYeW9q6oerRhOYejb2kIFMQn9SDKSZKmQGiyI3WOZa4188+pNGOgC/Yy0PjclZ8ldTfKxRA/KOgbOKVFp63dY78S9k9aNs+/gxsQuGhxlUZ3vNoUvXIyMwquIn5bO22Bc5tO+Fp8CGBwzdIyAWZsi2+0I9K482SlQIV9TGCVsapMR+wLUA/PySHb/yHk7MU1qiG/CKXnfWbpEtZzvXxs8aQ8/G4kKvHVsV10Tg7DGRrCyCnHir8UioQjh6gq9F2uvLId/sj+zL1BNQFUKhSmXHEl1d8cnSfywhIurQBxSWANTOa0A1DMYlbn4zi7PWxHF2fAYlFr+LKMSQLFwPXwapqUNxbMHeiMSlsPHXKqP9CoqUPGuhOHeG+5GHzM+lpj+ii5gkpK4n5qsWOtWrG+aXSG806g6Yg/f0lP9M8RoPYCD3MrCOYbEWFv6L2sC/SGt0q4Kv5gkPrwLrmtKgebvFM5LplHcbFeLsmBCHn2ZjMy7LD/uqw7J5SuHD/CvepIz79r9tlhq6AAVoG1IcgwVCxDrhdBRh4wBWKESEMbIc37mxitlxW8gV7ITw=
+        - secure: FHKKhT52gTNjVF6xR6yl11aswprsJ0KQJ2Pxl2visVo379KX1Vrhoogkl/PgJPV/SqQF7EsXNc4G560N53pUkEYSMXsAQ1gGDLXnwq5HWrOorzVqryjhO2uyLg+5BiE2Y149wFeiV6BTx4zUpwEeXzcSwMXMGg8HRIR+ZbDReBn0oBwv3vomtwxf4F9/O0rhDp8Vh65GUhl89DzpL6ZOKBwo2dQC55195B9f+CaKjhPETx40A1GMW62cKhWgqA3ck+2ctgORt9oMxZ8I5RGX941QS+wq6XzYozWTW5Iv0rwE8E4lpvatUQCcpgCZ3f97JZZphJ/XJF8Bi0uqvtQ3pr3AY2ihMzv0Oo3iIKWB5+PadEvmVFtnOOdodSlZNLmJY0lS1g5ObmxKRX3r9uJAVMGvNIc4DbW4WsSRvgaS/gCsLZlVDgrJuNdjUo9q6c1NyDIaf0PMcDQ842lQVBV7Xjww33UgrUNVa4WWm2kLHW1+xuCYZZnlN02Usfmz9W8yULN7baqFw6SOIaLLq2CjJzf6nC8Y7TPVY2hImmQU9+6RFBVdi/9WXyNSnF5fxdzytlepZ80xtNp4e7NJxGNocgLjoS4+88j9CdUqGKsmBXIqm64n5CXbGWIFRxb7XwDAkVNKaXieT5V7wT7lmBEtzVlrGeGsyWW9ytih+/GEvls=
 script:
-  - "./gradlew clean jar"
+    - './gradlew clean jar'
 jobs:
-  include:
-  - stage: Checks
-    jdk: oraclejdk8
-    name: UI check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - UI_BUILD=true
-    - COVERAGE=0.5
-    - TEST_PATH=/ui
-  - stage: Checks
-    jdk: oraclejdk9
-    name: UI check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - UI_BUILD=true
-    - COVERAGE=0.5
-    - TEST_PATH=/ui
-  - stage: Checks
-    jdk: oraclejdk8
-    name: service cart check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/service/cart
-  - stage: Checks
-    jdk: oraclejdk9
-    name: service cart check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/service/cart
-  - stage: Checks
-    jdk: oraclejdk8
-    name: service user check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/service/user
-  - stage: Checks
-    jdk: oraclejdk9
-    name: service user check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/service/user
-  - stage: Checks
-    jdk: oraclejdk8
-    name: repository order check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.24
-    - TEST_PATH=/repository/order
-  - stage: Checks
-    jdk: oraclejdk9
-    name: repository order check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.24
-    - TEST_PATH=/repository/order
-  - stage: Checks
-    jdk: oraclejdk8
-    name: repository cart check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/repository/cart
-  - stage: Checks
-    jdk: oraclejdk9
-    name: repository cart check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/repository/cart
-  - stage: Checks
-    jdk: oraclejdk8
-    name: repository product check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/repository/product
-  - stage: Checks
-    jdk: oraclejdk9
-    name: repository product check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.5
-    - TEST_PATH=/repository/product
-  - stage: Checks
-    jdk: oraclejdk8
-    name: repository user check jdk8
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.24
-    - TEST_PATH=/repository/user
-  - stage: Checks
-    jdk: oraclejdk9
-    name: repository user check jdk9
-    script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
-    env:
-    - COVERAGE=0.24
-    - TEST_PATH=/repository/user
+    include:
+        - stage: Checks
+          jdk: oraclejdk8
+          name: UI check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - UI_BUILD=true
+              - COVERAGE=0.5
+              - TEST_PATH=/ui
+        - stage: Checks
+          jdk: oraclejdk9
+          name: UI check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - UI_BUILD=true
+              - COVERAGE=0.5
+              - TEST_PATH=/ui
+        - stage: Checks
+          jdk: oraclejdk8
+          name: service cart check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/service/cart
+        - stage: Checks
+          jdk: oraclejdk9
+          name: service cart check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/service/cart
+        - stage: Checks
+          jdk: oraclejdk8
+          name: service user check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/service/user
+        - stage: Checks
+          jdk: oraclejdk9
+          name: service user check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/service/user
+        - stage: Checks
+          jdk: oraclejdk8
+          name: repository order check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.24
+              - TEST_PATH=/repository/order
+        - stage: Checks
+          jdk: oraclejdk9
+          name: repository order check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.24
+              - TEST_PATH=/repository/order
+        - stage: Checks
+          jdk: oraclejdk8
+          name: repository cart check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/repository/cart
+        - stage: Checks
+          jdk: oraclejdk9
+          name: repository cart check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/repository/cart
+        - stage: Checks
+          jdk: oraclejdk8
+          name: repository product check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/repository/product
+        - stage: Checks
+          jdk: oraclejdk9
+          name: repository product check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.5
+              - TEST_PATH=/repository/product
+        - stage: Checks
+          jdk: oraclejdk8
+          name: repository user check jdk8
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.24
+              - TEST_PATH=/repository/user
+        - stage: Checks
+          jdk: oraclejdk9
+          name: repository user check jdk9
+          script: COVERAGE=$COVERAGE ./gradlew -p ./monolithic$TEST_PATH check
+          env:
+              - COVERAGE=0.24
+              - TEST_PATH=/repository/user
 after_success:
-  - find . -name jacocoTestReport.csv|xargs cat|awk -F',' '{print $3" "$4" "$5}'
+    - find . -name jacocoTestReport.csv|xargs cat|awk -F',' '{print $3" "$4" "$5}'
 before_deploy:
-  - ./gradlew -p ./monolithic/ui packageToContainer
+    - bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\" --password-stdin"
+    - ./gradlew -p ./monolithic/ui packageToContainer
 deploy:
-  provider: script
-  script: chmod +x ./script/deploy.sh && ./script/deploy.sh
-  on:
-    all_branches: true
-    condition: $UI_BUILD = true
+    provider: script
+    script: chmod +x ./script/deploy.sh && ./script/deploy.sh
+    on:
+        all_branches: true
+        condition: $UI_BUILD = true
